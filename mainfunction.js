@@ -11,7 +11,7 @@ module.exports = async function (context, req) {
         return;
     }
 
-    const containerName = "mycontainer";
+    const containerName = "wikifiles";
     const blobName = req.query.blob || "test.pdf";
 
     const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
